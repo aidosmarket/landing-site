@@ -1,0 +1,19 @@
+{
+  "name": "aidos-landing-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "rimraf .next && rimraf out && next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "10.0.7",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
