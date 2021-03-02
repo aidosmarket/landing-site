@@ -49,6 +49,11 @@ const Footer = () => (
                                 <a className="footer-link">Security</a>
                         </Link>
                     </div>
+                    <div className="subtitle my-3">
+                        <Link href="/api-docs">
+                                <a className="footer-link">API Documentation</a>
+                        </Link>
+                    </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-links">
                     <div className="title">
