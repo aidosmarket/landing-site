@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  background-image: url("/images/background-waves.png");
+  background-image: url("/assets/images/background-waves-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -15,12 +15,24 @@ body {
   justify-content: flex-end;
 }
 
+.navbar-brand img.logo {
+  width: 264px;
+  height: 41px;
+}
+
+@media only screen and (max-width: 536px) {
+  .navbar-brand img.logo {
+    width: 220px;
+    height: 35px;
+  }
+}
+
 .white {
   background-color: #ffffff;
 }
 
 .footer {
-  background-color: #E5EFF8;
+  background-color: #e5eff8;
   margin-top: 150px;
 }
 
@@ -32,13 +44,13 @@ body {
 .footer .footer-links .title {
   font-size: 18px;
   line-height: 28px;
-  color: #17263D;
+  color: #17263d;
 }
 
 .footer .footer-links .subtitle a {
   font-size: 16px;
   line-height: 19px;
-  color: #828A9E;
+  color: #828a9e;
   text-decoration: none;
 }
 
@@ -51,18 +63,18 @@ body {
 }
 
 .footer .first .rights {
-  color: #828A9E;
+  color: #828a9e;
   font-size: 14px;
 }
 
 .footer .first .text {
-  color: #828A9E;
+  color: #828a9e;
   font-size: 14px;
   max-width: 350px;
 }
 
 .btn-blue {
-  background-color: #3167BC;
+  background-color: #3167bc;
   color: #ffffff;
   border-radius: 10px;
   padding: 10px 20px;
@@ -71,19 +83,19 @@ body {
 
 .btn-blue:hover {
   background-color: transparent;
-  color: #3167BC;
-  border: 1px solid #3167BC;
+  color: #3167bc;
+  border: 1px solid #3167bc;
 }
 
 .btn-white {
-  border: 1px solid #3167BC;
+  border: 1px solid #3167bc;
   box-sizing: border-box;
   border-radius: 10px;
   padding: 10px 50px;
 }
 
 .btn-white:hover {
-  background-color: #3167BC;
+  background-color: #3167bc;
   color: #ffffff;
 }
 
@@ -92,7 +104,7 @@ h1 {
   font-weight: bold;
   font-size: 50px;
   line-height: 70px;
-  color: #3167BC;
+  color: #3167bc;
 }
 
 h2 {
@@ -100,7 +112,7 @@ h2 {
   font-weight: 500;
   font-size: 35px;
   line-height: 50px;
-  color: #3167BC;
+  color: #3167bc;
 }
 
 h3 {
@@ -115,7 +127,7 @@ h4 {
   font-weight: 500;
   font-size: 20px;
   line-height: 36px;
-  color: #16303E;
+  color: #16303e;
 }
 
 img {
@@ -166,7 +178,7 @@ section {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #3167BC;
+  color: #3167bc;
   text-decoration: none;
 }
 
@@ -195,7 +207,7 @@ section {
 
 .unique {
   max-width: none;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   margin: 20px 0;
 }
 
@@ -211,14 +223,14 @@ section {
 }
 
 .our-product .text-number {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 300px;
   line-height: 200px;
   display: flex;
   align-items: center;
-  color: #D3E3F3;
+  color: #d3e3f3;
   justify-content: center;
 }
 
@@ -230,7 +242,7 @@ section {
 
 .counters {
   max-width: none;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .counters .container-counters {
@@ -251,7 +263,7 @@ section {
 
 .counters-box.users,
 .counters-box.entry {
-  border-right: 2px solid #EEEFF2;
+  border-right: 2px solid #eeeff2;
 }
 
 /*our-security*/
@@ -298,14 +310,14 @@ section {
 
 .display-mobile .arrow-down img,
 .display-mobile .arrow-down-second img {
-  max-height: 125px
+  max-height: 125px;
 }
 
 /*terms and faq*/
 .faq-title,
 .terms-title {
   max-width: none;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .faq-title .row,
@@ -324,8 +336,8 @@ section {
 .faq .accordion-button,
 .terms .accordion-button {
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, .125);
-  color: #16303E;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  color: #16303e;
   line-height: initial;
   padding-left: 0;
 }
@@ -338,12 +350,12 @@ section {
 .faq .accordion-button:not(.collapsed),
 .terms .accordion-button:not(.collapsed) {
   background-color: transparent;
-  color: #16303E;
+  color: #16303e;
 }
 
 .faq .accordion-button::after,
 .terms .accordion-button::after {
-  background-image: url("/images/carret_down.svg");
+  background-image: url("/assets/images/carret_down.svg");
 }
 
 .faq .accordion-collapse,
@@ -359,8 +371,8 @@ section {
 
 @media only screen and (max-width: 1600px) {
   section {
-      max-width: 1300px;
-      margin: auto;
+    max-width: 1300px;
+    margin: auto;
   }
 
   /*landing-page, terms and faq*/
@@ -368,95 +380,95 @@ section {
   .terms-title .row,
   .counters .container-counters,
   .unique .row {
-      max-width: 1300px;
-      margin: auto;
+    max-width: 1300px;
+    margin: auto;
   }
 }
 
 @media only screen and (max-width: 1200px) {
   /*how it does work*/
   .how-does-it-work .arrow-top img {
-      max-width: 200px;
+    max-width: 200px;
   }
 
   .how-does-it-work .arrow-down img {
-      max-width: 200px;
+    max-width: 200px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   body {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   h1 {
-      font-size: 30px;
-      line-height: 30px;
+    font-size: 30px;
+    line-height: 30px;
   }
 
   h2 {
-      font-size: 24px;
-      line-height: 30px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   h3 {
-      font-size: 24px;
-      line-height: 30px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   h4 {
-      font-size: 16px;
-      line-height: 23px;
+    font-size: 16px;
+    line-height: 23px;
   }
 
   .footer {
-      margin-top: 50px;
-      padding: 30px 15px !important;
+    margin-top: 50px;
+    padding: 30px 15px !important;
   }
 
   .footer .second .footer-links {
-      max-width: 33%;
+    max-width: 33%;
   }
 
   .footer .footer-links .title,
   .footer .footer-links .footer-link {
-      font-size: 12px !important;
+    font-size: 12px !important;
   }
 
   .footer .footer-links .subtitle {
-      margin: 0 !important;
+    margin: 0 !important;
   }
 
   .footer .first {
-      text-align: center;
-      margin-top: 30px;
+    text-align: center;
+    margin-top: 30px;
   }
 
   .footer .first .list-icons {
-      justify-content: center;
-      position: relative;
-      top: 10px;
+    justify-content: center;
+    position: relative;
+    top: 10px;
   }
 
   .footer .first .text {
-      display: none;
+    display: none;
   }
 
   .footer .first .rights {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .footer .first .row {
-      margin: 0 !important;
+    margin: 0 !important;
   }
 
   .column-reverse {
-      display: flex;
-      flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .display-desktop {
-      display: none;
+    display: none;
   }
 
   /*landing-page*/
@@ -466,131 +478,131 @@ section {
   .our-product,
   .counters,
   section {
-      padding: 15px !important;
+    padding: 15px !important;
   }
 
   .market .row {
-      margin: 0 !important;
+    margin: 0 !important;
   }
 
   .market .content-text {
-      margin-top: 20px;
-      width: 100%;
+    margin-top: 20px;
+    width: 100%;
   }
 
   .market .container-buttons {
-      justify-content: center;
+    justify-content: center;
   }
 
   .our-product .our-product-title {
-      text-align: left;
+    text-align: left;
   }
 
   .our-product .image-content {
-      margin-bottom: 15px !important;
+    margin-bottom: 15px !important;
   }
 
   .our-product .text-number-content {
-      margin: 0 !important;
+    margin: 0 !important;
   }
 
   .our-product .text-number-content .text-number {
-      max-width: 20%;
-      font-size: 80px;
-      line-height: 95px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      margin: 0 !important;
+    max-width: 20%;
+    font-size: 80px;
+    line-height: 95px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 !important;
   }
 
   .our-product .text-number-content .text-content {
-      max-width: 80%;
-      margin: 0 !important;
+    max-width: 80%;
+    margin: 0 !important;
   }
 
   .our-product .text-number-content .text-content .subtitle {
-      margin: 10px 0 !important;
+    margin: 10px 0 !important;
   }
 
   .our-product .image-content img {
-      max-width: 100px;
+    max-width: 100px;
   }
 
   .container-buttons .btn {
-      min-width: 125px;
-      padding: 10px 30px;
+    min-width: 125px;
+    padding: 10px 30px;
   }
 
   .counters .container-counters {
-      background-color: transparent;
+    background-color: transparent;
   }
 
   .counters .counters-box {
-      border: none;
-      flex: auto;
-      max-width: 50%;
-      margin: 0 auto;
-      padding: 10px !important;
+    border: none;
+    flex: auto;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 10px !important;
   }
 
   .counters .counters-box .row {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .counters .counters-box .image-box {
-      max-width: 30px;
-      padding: 0;
+    max-width: 30px;
+    padding: 0;
   }
 
   .counters .counters-box .title,
   .counters .counters-box .subtitle {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   /*    our security*/
   .security-unique {
-      padding: 15px !important;
-      margin: 0 !important;
+    padding: 15px !important;
+    margin: 0 !important;
   }
 
   .security-unique h1 {
-      font-size: 24px;
-      line-height: 30px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .list-security {
-      padding: 15px !important;
+    padding: 15px !important;
   }
 
   .security-unique img,
   .list-security img {
-      margin: 5px 0 15px;
+    margin: 5px 0 15px;
   }
 
   .list-security .image-box {
-      text-align: center;
+    text-align: center;
   }
 
   /*    how does it work*/
   .how-does-it-work {
-      padding: 0 !important;
+    padding: 0 !important;
   }
 
-  .how-does-it-work h1{
-      font-size: 24px;
-      line-height: 30px;
+  .how-does-it-work h1 {
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .how-does-it-work .row {
-      margin: 0 !important;
+    margin: 0 !important;
   }
 
   .how-does-it-work .image-box {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 
   /*terms and faq*/
@@ -598,32 +610,32 @@ section {
   .faq-title,
   .terms,
   .terms-title {
-      padding: 15px !important;
+    padding: 15px !important;
   }
 
   .faq-title h1,
   .terms-title h1 {
-      padding: 0;
-      font-size: 24px;
-      line-height: 30px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .faq-title .row,
   .faq .row,
   .terms-title .row,
   .terms .row {
-      padding: 0 !important;
-      margin-top: 0!important;
+    padding: 0 !important;
+    margin-top: 0 !important;
   }
 
   .faq .accordion-button::after,
   .terms .accordion-button::after {
-      margin-right: -15px;
+    margin-right: -15px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .display-mobile {
-      display: none;
+    display: none;
   }
 }
